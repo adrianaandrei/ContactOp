@@ -15,7 +15,7 @@ public class WebViewActivity extends Activity {
 	@SuppressLint("SetJavaScriptEnabled")
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		super.onCreate(savedInstanceState);
+	/*	super.onCreate(savedInstanceState);
 		setContentView(R.layout.webview_activity);
 
 		WebView webView = (WebView) this.findViewById(R.id.webView);
@@ -28,5 +28,6 @@ public class WebViewActivity extends Activity {
 		webView.setWebViewClient(new WebViewClient());
 		webView.setWebChromeClient(new WebChromeClient());
 		webView.loadUrl("file:///android_asset/raw/databinding.html");
+		*/
 	}
 }
