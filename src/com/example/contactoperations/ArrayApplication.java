@@ -119,7 +119,7 @@ public class ArrayApplication extends Application {
 		return sb.toString();
 	}
 	
-	private String addToJsonPerCategory(String[] data, String groupName) {
+	protected String addToJsonPerCategory(String[] data, String groupName) {
 		StringBuffer sb = new StringBuffer();
 		sb.append("[");
 		for (int i = 0; i < data.length; i++) {
@@ -135,4 +135,6 @@ public class ArrayApplication extends Application {
 		
 		return sb.toString();
 	}
+	
+	
 }
