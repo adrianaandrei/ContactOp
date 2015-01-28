@@ -119,6 +119,25 @@ public class ArrayApplication extends Application {
 		return sb.toString();
 	}
 	
+		/**
+	 * Sorry for not using the standard org.json.JSONArray but even in Android
+	 * 4.2 it lacks the JSONArray(Object[]) constructor, making it too painful
+	 * to use.
+	 */
+	private String a1dToJson1(String[] data) {
+		StringBuffer sb = new StringBuffer();
+		sb.append("[\"");
+		for (int i = 0; i < data.length; i++) {
+			String d = data[i];
+			if (i > 0)
+				sb.append("\",\"");
+			sb.append(d);
+		}
+		sb.append("\"]");
+		return sb.toString();
+	}
+	
+	
 	private String addToJsonPerCategory(String[] data, String groupName) {
 		StringBuffer sb = new StringBuffer();
 		sb.append("[");
